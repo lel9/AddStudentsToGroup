@@ -6,8 +6,8 @@ import adderator as ad
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Параметры запуска:')
-    parser.add_argument('start', type=str, help='Начальный stud_id, например, stud_01')
-    parser.add_argument('end', type=str, help='Конечный stud_id, например, stud_02')
+    parser.add_argument('start', type=str, help='Начальный id из stud_id, например, 01')
+    parser.add_argument('end', type=str, help='Конечный id из stud_id, например, 10')
     parser.add_argument('group_id', type=int, help='ID группы студентов в Redmine')
     parser.add_argument('-s', '--settings', type=str,
                         default='./settings.ini',
